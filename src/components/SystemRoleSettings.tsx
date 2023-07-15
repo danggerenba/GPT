@@ -24,11 +24,11 @@ export default (props: Props) => {
         <Show when={props.currentSystemRoleSettings()}>
           <div>
             <div class="fi gap-1 op-50 dark:op-60">
-              <IconEnv />
-              <span>System Role:</span>
+             {/*<IconEnv />*/}
+              {/*<span>System Role:</span>*/}
             </div>
             <div class="mt-1">
-              { props.currentSystemRoleSettings() }
+              {/*{ props.currentSystemRoleSettings() }*/}
             </div>
           </div>
         </Show>
