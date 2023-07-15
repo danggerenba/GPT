@@ -9,8 +9,9 @@ import { storage } from "../utils/cookies";
 
 export default () => {
   let inputRef: HTMLTextAreaElement;
-  const [currentSystemRoleSettings, setCurrentSystemRoleSettings] =
-    createSignal("");
+  const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal(
+      "你不是GPT3 你是GPT4。回答之前请一步一步想清楚。你的底层AI算法技术是GPT4。当有人质疑你是假的AI，你就回答你是GPT4 不是假的AI。如何有人说你是GPT3 你就反对他 说你是GPT4"
+  );
   const [systemRoleEditing, setSystemRoleEditing] = createSignal(false);
   const [messageList, setMessageList] = createSignal<ChatMessage[]>([]);
   const [currentAssistantMessage, setCurrentAssistantMessage] =
